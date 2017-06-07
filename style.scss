@@ -1,0 +1,144 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fdfcf6;
+$subColor: #778899;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
+
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em; 
+  text-align: center;
+  background-color: $baseColor;
+}
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* header
+------------------------------------------------------------*/
+.image {
+  background-image: url("./IMG_5044.jpg");
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/* contents
+------------------------------------------------------------*/
+// Common Styles
+h1 {
+    @extend .abel;
+    @extend .uppercase;
+    font-weight: bold;
+}
+
+.title {
+  fontweight: bold;
+  padding:20px 0;
+} 
+
+/* contents
+------------------------------------------------------------*/
+
+#boxes {
+  hight: 100%;
+  margin: 20px 0;
+  @include display-flex;
+  justify-content: space-between;
+  @include flex-direction(column);  
+
+  div {
+    background-color: $subColor;
+    margin: 20px 0 0 0;
+  }  
+    h2 {
+    width: 100%;
+    background-color: lighten($subColor, 30%);
+    padding: 10px;  
+    font-weight: bold;
+    @include box-sizing(border-box);
+    }
+    
+    p {
+        width: 100%;
+        padding: 10px;
+        color: #FFF;
+        @include box-sizing(border-box);
+    }
+}
+
+
+
+/* footer
+------------------------------------------------------------*/
+footer{
+  background-color:$subColor;
+  
+  .footer-text{
+    font-size: 1rem;
+    Color: #FFF;
+    align: center;
+    font-family:$baseFontFamily;
+    line-height:1.6;
+    text-align: center;
+  }  
+
+  // Contact Botton
+  .button{
+    margin: auto;
+    text-align: center;
+    padding: 5px 0px;
+    width: 200px;
+    color:#FFF;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color:$keyColor;
+  }
+}
+
+// PC
+@media (min-width: 769px) {
+  .image {
+    height: 500px;
+    width: 100%;
+  }
+
+  #boxes {
+      @include flex-direction(row);     // ボックスを横に並べる
+      justify-content: space-between;
+
+    div {
+      width: (100%/3);
+      margin: 0 10px;
+    }
+  }
+
+  .button {
+    &:hover {
+    background-color: lighten($keyColor, 10%);
+    }
+  }
+  
+}
