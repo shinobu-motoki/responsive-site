@@ -1,109 +1,58 @@
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Abel);
-/* Base
-------------------------------------------------------------*/
-html {
-  font-size: 62.5%; }
+/*
+Error: File to import not found or unreadable: compass.
+        on line 1 of /home/ubuntu/workspace/responsive-site/style.scss
 
-body {
-  color: #4c4c4c;
-  font-size: 1.4rem;
-  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  line-height: 1.6;
-  letter-spacing: 0.1em;
-  text-align: center;
-  background-color: #fdfcf6; }
+1: @import "compass";
+2: @import url(https://fonts.googleapis.com/css?family=Abel);
+3: // font-family
+4: $baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+5: 
+6: // colors
 
-/* Font
-------------------------------------------------------------*/
-.abel, h1 {
-  font-family: 'Abel', sans-serif; }
-
-.uppercase, h1 {
-  text-transform: uppercase; }
-
-/* header
-------------------------------------------------------------*/
-.image {
-  background-image: url("./IMG_5044.jpg");
-  height: 250px;
-  width: 100%;
-  background-size: cover;
-  background-position: center center; }
-
-/* contents
-------------------------------------------------------------*/
-h1 {
-  font-weight: bold; }
-
-.title {
-  fontweight: bold;
-  padding: 20px 0; }
-
-/* contents
-------------------------------------------------------------*/
-#boxes {
-  hight: 100%;
-  margin: 20px 0;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-  -webkit-flex-direction: column;
-  flex-direction: column; }
-  #boxes div {
-    background-color: #778899;
-    margin: 20px 0 0 0; }
-  #boxes h2 {
-    width: 100%;
-    background-color: #ced5db;
-    padding: 10px;
-    font-weight: bold;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-  #boxes p {
-    width: 100%;
-    padding: 10px;
-    color: #FFF;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-
-/* footer
-------------------------------------------------------------*/
-footer {
-  background-color: #778899; }
-  footer .footer-text {
-    font-size: 1rem;
-    Color: #FFF;
-    align: center;
-    font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    line-height: 1.6;
-    text-align: center; }
-  footer .button {
-    margin: auto;
-    text-align: center;
-    padding: 5px 0px;
-    width: 200px;
-    color: #FFF;
-    font-weight: bold;
-    font-size: 1rem;
-    background-color: #14c0c9; }
-
-@media (min-width: 769px) {
-  .image {
-    height: 500px;
-    width: 100%; }
-
-  #boxes {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    justify-content: space-between; }
-    #boxes div {
-      width: 33.33333%;
-      margin: 0 10px; }
-
-  .button:hover {
-    background-color: #27e0e9; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+/home/ubuntu/workspace/responsive-site/style.scss:1
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:45:in `import'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.24/bin/scss:13:in `<top (required)>'
+/usr/local/rvm/gems/ruby-2.3.0/bin/scss:23:in `load'
+/usr/local/rvm/gems/ruby-2.3.0/bin/scss:23:in `<main>'
+/usr/local/rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/usr/local/rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: compass.\A         on line 1 of /home/ubuntu/workspace/responsive-site/style.scss\A \A 1: @import \"compass\";\A 2: @import url(https://fonts.googleapis.com/css?family=Abel);\A 3: // font-family\A 4: $baseFontFamily :\"游ゴシック\", YuGothic, \"メイリオ\",Verdana, \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif;\A 5: \A 6: // colors"; }
